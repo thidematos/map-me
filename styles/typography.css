@@ -1,0 +1,51 @@
+@import url("global.css");
+@import url("header.css");
+
+.typography-titulo {
+    font-weight: 700;
+    font-size: var(--size12);
+    color: var(--black);
+}
+
+.typography-subtitulo {
+    font-weight: 700;
+    font-size: var(--size10);
+    color: var(--black)
+}
+
+.typography-paragrafo {
+    font-weight: 400;
+    font-size: var(--size4);
+    color: var(--black);
+    line-height: var(--size6);
+}
+
+.typography-nav {
+    font-weight: 400;
+    font-size: var(--size6);
+    color: var(--black);
+}
+
+.typography-amatic {
+    font-family: var(--fontAmatic);
+}
+
+.typography-strong {
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.text-right {
+    text-align: right;
+}
+  
+.text-center {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px){
+    .typography-subtitulo {
+        font-size: var(--size8);
+    }
+}
+

@@ -1,0 +1,58 @@
+@import url("global.css");
+
+.main_section_table{
+    width: 100%;
+	overflow-x: auto;	
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+.section_table{
+	border-collapse: collapse;
+	background-color: var(--white);
+
+}
+
+.table_caption{
+	background-color: var(--brancoAzulado);
+    font: 700 var(--size6) var(--fontJakarta);
+    padding-bottom: var(--size2);
+}
+
+.table_header{
+    padding: var(--size2);
+
+}
+
+.table_data, .table_header{
+    border: 1px solid var(--black);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table_source{
+	display:block;
+	background-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+    .main_section_table{
+        width: 98vw;
+        padding: var(--size5) var(--size0);
+    }
+    .table_caption{
+        font-size: var(--size8);
+    }
+
+    .table_header{
+        font-size: var(--size7);
+    }
+
+    .table_data{
+        font-size: var(--size6);
+    }
+    .table_source{
+        font-size: var(--size6);
+    }
+}

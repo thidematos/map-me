@@ -1,0 +1,50 @@
+@import url("global.css");
+
+.section_card{
+    display:flex;
+    flex-flow: row nowrap;
+    width: 80vw;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: var(--size4);
+    border-radius: var(--size4);
+    gap: var(--size4);
+}
+.card_container{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: var(--size4);
+    width: 50%;
+}
+
+.container_conteudo{
+    font: 700 var(--size4) var(--fontJakarta);
+}
+
+.container_link{
+    display: block;
+    background-color: var(--brancoAzulado);
+    padding: var(--size2);
+    text-align: center;
+    text-decoration: none;
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    .container_conteudo{
+        font-size: var(--size6);
+    }
+    .card_container{
+        height: 100%;
+    }
+    .container_link{
+        font-size: var(--size6);
+    }
+    .conteudo_imagem{
+        width: 12%;
+    }
+}

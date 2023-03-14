@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;700&display=swap");
+
+/* RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* RESET */
+
+:root {
+  /* COLORS */
+  --white: #ffffff;
+  --black: #000000;
+  --brancoAzulado: #defcf9;
+  --azulClaro: #85cdfd;
+  --azul: #3c84ab;
+  --azulEscuro: #362fd9;
+  --laranja: #f76015;
+  /* FONTS */
+  --fontJakarta: "Plus Jakarta Sans";
+  --fontAmatic: "Amatic SC";
+  /* SPACING */
+  --size0:	0rem; /* 0px */
+  --size1:	0.25rem; /* 4px */
+  --size2:	0.5rem; /* 8px */
+  --size3:	0.75rem; /* 12px */
+  --size4:	1rem; /* 16px */
+  --size5:	1.25rem; /* 20px */
+  --size6:	1.5rem; /* 24px */
+  --size7:	1.75rem; /* 28px */
+  --size8:	2rem; /* 32px */
+  --size9:	2.25rem; /* 36px */
+  --size10:	2.5rem; /* 40px */
+  --size11:	2.75rem; /* 44px */
+  --size12:	3rem; /* 48px */
+  --size13:	3.25rem; /* 52px */
+  --size14:	3.5rem; /* 56px */
+  --size15:	3.75rem; /* 60px */
+  --size16:	4rem; /* 64px */
+  --size17:	4.25rem; /* 68px */
+  --size18:	4.5rem; /* 72px */
+  --size19:	4.75rem; /* 76px */
+  --size20:	5rem; /* 80px */
+  --size21:	5.25rem; /* 84px */
+  --size22:	5.5rem; /* 88px */
+  --size23:	5.75rem; /* 92px */
+  --size24:	6rem; /* 96px */
+  --size24:	6.25rem; /* 100px */
+}
+
+body {
+  background-color: var(--brancoAzulado);
+  font-family: var(--fontJakarta);
+  font-size: var(--size4);
+}
+
+.cta {
+  background-color: var(--azulClaro);
+  text-align: center;
+  color: var(--white);
+  padding: var(--size0) var(--size2);
+  font: 700 var(--size10) var(--fontAmatic);
+  text-decoration: none;
+}
+
+.cta:hover {
+  background-image: linear-gradient(to right, var(--azulClaro), var(--white));
+  color: var(--black);
+}

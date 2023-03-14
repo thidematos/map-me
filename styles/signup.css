@@ -1,0 +1,217 @@
+@import url(global.css);
+@import url(header.css);
+
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+
+.outer {
+  background-color: var(--white);
+  background-image: url(../assets/backgroundlogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  width: 50vw;
+  height: 80vh;
+  border: 2px solid var(--laranja);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.353);
+}
+
+#outer_congrats {
+  height: 40vh;
+}
+
+.outer_titulo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+#titulo_congrats {
+  padding: 0 2rem;
+}
+
+.titulo {
+  font: 700 1.5rem var(--fontJakarta);
+  color: var(--black);
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#congrats_titulo {
+  color: var(--laranja);
+  font: 700 3rem var(--fontAmatic);
+  background-color: var(--brancoAzulado);
+  padding: 0.5rem;
+  border: 1px solid var(--laranja);
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.353);
+  text-shadow: none;
+}
+
+.subtitulo {
+  font: 700 1.3rem var(--fontJakarta);
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.inner {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 3% 10%;
+  gap: 0.8rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  height: 65%;
+  margin-bottom: 1.5rem;
+}
+
+.inner_container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.inner_label {
+  font: 700 1.2rem var(--fontJakarta);
+  color: var(--laranja);
+}
+
+.inner_input {
+  width: 100%;
+  text-align: center;
+  font-family: var(--fontJakarta);
+}
+
+#email::placeholder {
+  background-image: url(../assets/Email.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 25%;
+  text-align: center;
+  font-family: var(--fontJakarta);
+}
+#senha::placeholder,
+#rsenha::placeholder {
+  background-image: url(../assets/password.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 25%;
+  text-align: center;
+  font-family: var(--fontJakarta);
+}
+
+#text,
+#text::placeholder {
+  text-align: left;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cancel_button {
+  display: block;
+  text-decoration: none;
+  color: var(--azul);
+  font: 700 1rem var(--fontJakarta);
+  border: 3px solid var(--brancoAzulado);
+  text-align: center;
+  padding: 0.5rem;
+  background-color: azure;
+}
+
+.submit {
+  background-color: var(--azulClaro);
+  text-align: center;
+  color: var(--white);
+  font: 700 2rem var(--fontAmatic);
+  padding: 0.5rem;
+}
+
+.submit:hover {
+  background-image: linear-gradient(to right, var(--azulClaro), var(--white));
+  color: var(--black);
+}
+
+.footer {
+  margin-top: 5rem;
+  background-color: var(--azul);
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_conteudo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.footer_titulo {
+  display: block;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.footer_logo {
+  display: block;
+  font: 700 2.5rem var(--fontAmatic);
+  color: var(--white);
+}
+
+@media screen and (max-width: 1024px){
+  .outer{
+    height: 60vh;
+    width: 70vw;
+  }
+  .main{
+    height: 100vh;
+  }
+  #outer_congrats{
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .outer{
+    height: 90vh;
+    width: 95vw;
+  }
+  
+  .outer_titulo{
+    justify-content: center;
+    text-align: center;
+  }
+  #email::placeholder, 
+  #senha::placeholder, #rsenha::placeholder{
+    background-position-x: 12%;
+  }
+  .main{
+    height: 100vh;
+    margin: 0;
+  }
+  #outer_congrats{
+    width: 95vw;
+  }
+
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <header class="header">
+      <img src="assets/logo300.png" alt="The Map of Me logo" class="header_logo" />
+      <h1 class="header_titulo">The Map of Me</h1>
+      <nav class="header_nav">
+        <h1 class="header_titulo-1024">The Map of Me</h1>
+        <img
+          src="assets/Menu.svg"
+          alt="The Map of Me logo"
+          class="menu_hamb"
+          onclick="clickMenu()"
+        />
+        <div id="menu">
+          <ul class="menu_lista">
+            <li class="lista_li"><a href="./index.html" class="nav_link typography-nav">Home</a></li>
+            <li class="lista_li">
+              <a href="pages/benefits.html" class="nav_link typography-nav">Jornada</a>
+            </li>
+            <li class="lista_li">
+              <a href="pages/about.html" class="nav_link typography-nav">Exploradores</a>
+            </li>
+            <li class="lista_li">
+              <a href="pages/signup.html" class="nav_link typography-nav typography-amatic cta">Junte-se!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Menu -->
+    <section class="container-principal">
+      <div class="container-principal-content">
+        <img class="imagem-principal" src="./assets/amigo.png" alt="Um mergulhador meditando" />
+        <h2 class="typography-subtitulo text-right">Vocês estão prontos para aventura?</h2>
+        <p class="typography-paragrafo text-right">
+          Seja muito bem vindo, jogador, ao mundo das descobertas.  
+          Aqui, você irá <strong class="typography-strong">desbravar</strong> o mapa do mais incrível universo de quebra-cabeças game,
+          associando novos conhecimentos de mundo a uma das maiores invenções do planeta:
+          o <strong class="typography-strong">quebra-cabeças</strong>. 
+        </p>
+      </div>
+    </section>
+
+    <section class="container-content">
+      <div class="container">
+        <img
+          class="imagem"
+          src="./assets/MapaDoTesouro.png"
+          alt="Mapa do Tesouro"
+        />
+        <div>
+          <h3 class="typography-subtitulo container-titulo">Será que você conseguiria encontrar o tesouro que está perdido no <strong class="typography-strong">Oceano</strong>?</h3>
+          <p class="typography-paragrafo">
+            Diante da imensidão do mar, muitas coisas se perdem, muitas se acham e muitas precisam de ajuda... 
+            E dessa vez, a ajuda será toda sua, para que possamos <strong class="typography-strong">encontrar o tesouro do mar perdido</strong>.
+          </p>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div>
+          <h3 class="typography-subtitulo container-titulo text-right">Você verá um mundo de conhecimento!</h3>
+          <p class="typography-paragrafo text-right">
+            Seria muito legal achar o tesouro, mas não seria muuuuito mais legal entender o oceano enquanto procuramos esse tesouro?
+            Então, poderemos montar quebra-cabeças, procurar um tesouro e ainda aprender sobre o oceano...
+            <strong class="typography-strong">FALA SÉRIO SE NÃO É DEMAIS?</strong>
+          </p>
+        </div>
+        <img
+          class="imagem"
+          src="./assets/puzzle.png"
+          alt="Peças de quebra-cabeças"
+        />
+      </div>
+  
+      <div class="container">
+        <img
+          class="imagem"
+          src="./assets/peixePalhaco.png"
+          alt="4 peixes palhaços"
+        />
+        <div>
+          <h3 class="typography-subtitulo container-titulo">Tenha com você, um <strong class="typography-strong">companheiro</strong> para todos os momentos.</h3>
+          <p class="typography-paragrafo">
+            O intuito do nosso mapa é lhe ajudar a descobrir mais sobre o oceano e sobre você mesmo. Nós, seres-humanos,
+            somos muito mais parecidos com os animais marinhos do que imaginamos, e isso, sem dúvidas, é algo incrível...
+            conhecer essa <strong class="typography-strong">biodiversidade</strong> e entender o quanto esse mundo aquático é igual a nós
+            será <strong class="typography-strong">um mar de descobertas</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta">
+      <h2 class="typography-subtitulo text-center">
+        E ai, vai ficar de fora da busca pelo tesouro perdido?<br />  
+        Vem com a gente, precisaremos da sua ajuda! 
+      </h2>
+      <a class="cta" href="./pages/signup.html">
+        Junte-se
+      </a>
+    </section>
+    <script>
+      function clickMenu() {
+        if (menu.style.display == "none") {
+          menu.style.display = "flex";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

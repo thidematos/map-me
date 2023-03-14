@@ -1,0 +1,142 @@
+@import url("global.css");
+@import url("typography.css");
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header_logo {
+  display: none;
+  height: 15vh;
+}
+
+.header_titulo,
+.header_titulo-1024 {
+  font: 700 var(--size16) var(--fontAmatic);
+  padding: var(--size2);
+}
+
+.header_nav {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.nav_link {
+  display: block;
+  text-decoration: none;
+  color: var(--azul);
+  border-top: 3px solid var(--brancoAzulado);
+  text-align: right;
+  padding: var(--size2);
+}
+
+.nav_link:hover {
+  color: var(--white);
+  background-color: var(--azul);
+  padding: var(--size2);
+}
+
+.lista_li {
+  display: block;
+  width: 100%;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 8%;
+  background-color: var(--white);
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.252);
+}
+
+.menu_lista {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  list-style-type: none;
+}
+.header_titulo-1024 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .header_logo {
+    display: block;
+    width: 20%;
+    height: 10%;
+  }
+
+  .header_titulo {
+    display: none;
+  }
+
+  .header_titulo-1024 {
+    display: block;
+    font-size: var(--size24);
+  }
+
+  .menu_hamb {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: initial;
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+  }
+  .header_nav {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+  }
+  .menu_lista {
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav_link,
+  .lista_li {
+    border: none;
+    width: auto;
+    text-align: center;
+  }
+
+  .nav_link {
+    font-size: var(--size8);
+  }
+
+  .cta {
+    font-size: var(--size14);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .header_titulo-1024 {
+    display: block;
+    font-size: 8rem;
+  }
+  .nav_link {
+    font-size: var(--size8);
+  }
+
+  .cta {
+    font-size: var(--size12);
+  }
+}

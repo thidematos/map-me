@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastre-se!</title>
+    <link rel="stylesheet" href="../styles/signup.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Menu -->
+    <header class="header">
+      <img src="../assets/logo300.png" alt="The Map of Me logo" class="header_logo" />
+      <h1 class="header_titulo">The Map of Me</h1>
+      <nav class="header_nav">
+        <h1 class="header_titulo-1024">The Map of Me</h1>
+        <img
+          src="../assets/Menu.svg"
+          alt="The Map of Me logo"
+          class="menu_hamb"
+          onclick="clickMenu()"
+        />
+        <div id="menu">
+          <ul class="menu_lista">
+            <li class="lista_li"><a href="../index.html" class="nav_link typography-nav">Home</a></li>
+            <li class="lista_li">
+              <a href="./benefits.html" class="nav_link typography-nav">Jornada</a>
+            </li>
+            <li class="lista_li">
+              <a href="./about.html" class="nav_link typography-nav">Exploradores</a>
+            </li>
+            <li class="lista_li">
+              <a href="./signup.html" class="nav_link typography-nav typography-amatic cta">Junte-se!</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Menu -->
+    <main class="main">
+      <div class="outer">
+        <div class="outer_titulo">
+          <h1 class="titulo">Torne-se um explorador!</h1>
+          <h2 class="subtitulo">Cadastre-se para ter acesso antecipado</h2>
+        </div>
+        <form class="inner" action="congrat.html">
+          <div class="inner_container">
+            <label for="email" class="inner_label">Email:</label>
+            <input
+              type="email"
+              placeholder="email@dominio.com"
+              id="email"
+              class="inner_input"
+              required
+            />
+          </div>
+
+          <div class="inner_container">
+            <label for="senha" class="inner_label">Senha:</label>
+            <input
+              type="password"
+              placeholder="Insira sua senha"
+              id="senha"
+              class="inner_input"
+              required
+            />
+          </div>
+
+          <div class="inner_container">
+            <label for="rsenha" class="inner_label">Repita sua senha:</label>
+            <input
+              type="password"
+              placeholder="Repita sua senha"
+              id="rsenha"
+              class="inner_input"
+              required
+            />
+          </div>
+
+          <div class="inner_container">
+            <label for="text" class="inner_label">Relato:</label>
+            <textarea
+              rows="10"
+              id="text"
+              placeholder="Insira suas sugestões, comentários e expectativas referentes ao The Map of Me"
+              class="inner_input"
+              required
+            ></textarea>
+          </div>
+
+          <div class="buttonGroup">
+            <a class="cancel_button" href="../index.html">Cancelar</a>
+            <input type="submit" value="Juntar-se!" class="submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_conteudo">
+        <h3 class="footer_titulo">Grupo</h3>
+        <p class="footer_logo">The Map of Me</p>
+      </div>
+    </footer>
+    <script>
+      function clickMenu() {
+        if (menu.style.display == "none") {
+          menu.style.display = "flex";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
